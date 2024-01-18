@@ -11,5 +11,3 @@ variable "s3_force_destroy" {
   type = bool
   default = false
 }
-variable "" {}
-variable "" {}
