@@ -1,6 +1,6 @@
 output "s3_bucket_id" {
 
-  value       = [for bucket in aws_s3_bucket.bucket: bucket.id]
+  value       = [for k,v in aws_s3_bucket.bucket: "${k}"]
 }
 
 output "s3_bucket_arn" {
