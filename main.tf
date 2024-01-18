@@ -8,7 +8,7 @@ data "aws_caller_identity" "current" {}
 
 resource "aws_s3_bucket" "bucket" {
   
-  bucket = "tf${var.environment}"
+  bucket = var.bucket_name
   force_destroy = var.s3_force_destroy
   tags = {
     Name        = var.bucket_tag_name
